@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<xs:schema version="1.0"
+	targetNamespace="https://lundellnet.com/toolbox/api/data_access"
+	xmlns="https://lundellnet.com/toolbox/api/data_access"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:annox="http://annox.dev.java.net"
+	elementFormDefault="qualified">
+
+    <xs:simpleType name="AnnotatedElementType">
+	<xs:restriction base="xs:string">
+	    <xs:enumeration value="com.lundellnet.toolbox.api.data_access.annotations.MatrixComponent" />
+	    <xs:enumeration value="com.lundellnet.toolbox.api.data_access.annotations.MatrixConstant" />
+	    <xs:enumeration value="com.lundellnet.toolbox.api.data_access.annotations.MatrixRoot" />
+	    <xs:enumeration value="com.lundellnet.toolbox.api.data_access.annotations.DataLocation" />
+	    <xs:enumeration value="com.lundellnet.toolbox.api.data_access.annotations.DataMapping" />
+	    <xs:enumeration value="com.lundellnet.toolbox.api.data_access.annotations.DataMappings" />
+	</xs:restriction>
+    </xs:simpleType>
+
+</xs:schema>

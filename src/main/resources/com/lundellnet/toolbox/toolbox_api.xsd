@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<xs:schema version="1.0"
+	targetNamespace="https://lundellnet.com/toolbox/api"
+	xmlns="https://lundellnet.com/toolbox/api"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:annox="http://annox.dev.java.net"
+	elementFormDefault="qualified">
+
+</xs:schema>
