@@ -7,6 +7,8 @@ import java.lang.annotation.Target;
 
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ElementType.FIELD, ElementType.TYPE})
-public @interface MatrixComponent {
-  MappingProperty[] properties() default {};
+public @interface MappingProperty {
+  String key();
+  
+  String path();
 }
