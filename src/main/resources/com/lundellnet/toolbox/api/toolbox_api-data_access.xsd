@@ -9,11 +9,14 @@
     <xs:simpleType name="AnnotatedElementType">
 	<xs:restriction base="xs:string">
 	    <xs:enumeration value="com.lundellnet.toolbox.api.data_access.annotations.MatrixComponent" />
+	    <xs:enumeration value="com.lundellnet.toolbox.api.data_access.annotations.MatrixComponentAdapter" />
+	    <xs:enumeration value="com.lundellnet.toolbox.api.data_access.annotations.MatrixComponentField" />
+	    <xs:enumeration value="com.lundellnet.toolbox.api.data_access.annotations.MatrixComponentPoint" />
 	    <xs:enumeration value="com.lundellnet.toolbox.api.data_access.annotations.MatrixConstant" />
-	    <xs:enumeration value="com.lundellnet.toolbox.api.data_access.annotations.MatrixRoot" />
-	    <xs:enumeration value="com.lundellnet.toolbox.api.data_access.annotations.DataLocation" />
-	    <xs:enumeration value="com.lundellnet.toolbox.api.data_access.annotations.DataMapping" />
-	    <xs:enumeration value="com.lundellnet.toolbox.api.data_access.annotations.DataMappings" />
+	    <xs:enumeration value="com.lundellnet.toolbox.api.data_access.annotations.MatrixSource" />
+	    <xs:enumeration value="com.lundellnet.toolbox.api.data_access.annotations.PointLocation" />
+	    <xs:enumeration value="com.lundellnet.toolbox.api.data_access.annotations.PointMapping" />
+	    <xs:enumeration value="com.lundellnet.toolbox.api.data_access.annotations.PointMappings" />
 	</xs:restriction>
     </xs:simpleType>
 
