@@ -25,7 +25,9 @@ import java.lang.annotation.Target;
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.FIELD)
 public @interface PointMapping {
-    String id();
+    String id() default "";
+    
+    String category() default "";
   
     String path() default "";
     

@@ -25,6 +25,10 @@ import java.lang.annotation.Target;
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.FIELD)
 public @interface PointLocation {
+    String id() default "";
+    
+    String category() default "";
+  
 	int column() default 0;
 	
 	int length() default 0;
