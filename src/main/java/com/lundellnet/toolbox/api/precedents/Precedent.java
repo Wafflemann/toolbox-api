@@ -1,7 +1,7 @@
 /*
  Copyright 2017 Appropriate Technologies LLC.
 
- This file is part of toolbox-api, a component of the Lundellnet Java Toolbox.
+ This file is part of toolbox-obj-api, a component of the Lundellnet Java Toolbox.
 
  Licensed under the Apache License, Version 2.0 (the "License");
  you may not use this file except in compliance with the License.
@@ -15,17 +15,19 @@
  See the License for the specific language governing permissions and
  limitations under the License.
  */
-package com.lundellnet.toolbox.api.data_access.annotations;
+package com.lundellnet.toolbox.api.precedents;
 
-import java.lang.annotation.ElementType;
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-import java.lang.annotation.Target;
+import java.util.function.Function;
 
-@Retention(RetentionPolicy.RUNTIME)
-@Target({ElementType.FIELD, ElementType.TYPE})
-public @interface MatrixComponentPoint {
-    PointMapping[] valueMapping();
+import com.lundellnet.toolbox.api.precedents.config.PrecedentConf;
 
-    MappingProperty[] properties() default {};
+public interface Precedent <D extends Enum<D>, T, R, C extends PrecedentConf<T, R>> {
+
+	C conf();
+	
+	D decision();
+	
+	default Function<T, R> applicant() {
+		return conf().applicant();
+	}
 }

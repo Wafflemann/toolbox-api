@@ -25,5 +25,7 @@ import java.lang.annotation.Target;
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ElementType.FIELD, ElementType.TYPE})
 public @interface MatrixComponent {
-  MappingProperty[] properties() default {};
+	PointMapping[] valueMapping() default {};
+	
+	MappingProperty[] properties() default {};
 }

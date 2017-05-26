@@ -14,6 +14,7 @@
 	<jaxb.version>2.1</jaxb.version>
 	<jaxb2-plugin.version>0.13.2</jaxb2-plugin.version>
 	<cxf-javadoc.version>3.0.4</cxf-javadoc.version>
+	<toolbox_commons.version>0.0.2-SNAPSHOT</toolbox_commons.version>
 	<toolbox.dir.namespace>${basedir}/src/main/resources/com/lundellnet/toolbox</toolbox.dir.namespace>
 	<toolbox_api.dir.namespace>${toolbox.dir.namespace}/api</toolbox_api.dir.namespace>
 	<toolbox_api.dir.generate>${project.build.directory}/generated-sources/xjc1</toolbox_api.dir.generate>
@@ -183,6 +184,12 @@
 	</build>
 
 	<dependencies>
+
+	    <dependency>
+		<groupId>com.lundellnet</groupId>
+		<artifactId>toolbox-commons</artifactId>
+		<version>${toolbox_commons.version}</version>
+	    </dependency>
 
 	    <dependency>
 		<groupId>javax.xml.bind</groupId>
