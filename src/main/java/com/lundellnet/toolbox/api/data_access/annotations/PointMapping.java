@@ -22,14 +22,36 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
+import com.lundellnet.toolbox.api.data_access.adapters.DataMatrixAdapter;
+
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.FIELD)
 public @interface PointMapping {
-    String id() default "";
+	static abstract class DEFAULT implements DataMatrixAdapter<Object, Object> {}
     
-    String category() default "";
+    Class<? extends DataMatrixAdapter<?, ?>> adapter() default DEFAULT.class;
+    
+    //int i_adapter() default 0;
+    
+	//int c() default 0;
+	
+    Class<?> component() default void.class;
+	
+    //int i_component() default 0;
+    
+    String delimiter() default "/";
+    
+    String domain() default "";
+    
+    int i_domain() default 0;
+    
+    String model() default "";
+    
+    int i_model() default 0;
   
     String path() default "";
     
-    String delimiter() default "/";
+    String plane() default "";
+    
+    int i_plane() default 0;
 }

@@ -15,28 +15,13 @@
  See the License for the specific language governing permissions and
  limitations under the License.
  */
-package com.lundellnet.toolbox.api.data_access.annotations;
+package com.lundellnet.toolbox.api.data_access;
 
-import java.lang.annotation.ElementType;
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-import java.lang.annotation.Target;
+public interface MatrixConstraint {
 
-import com.lundellnet.toolbox.api.data_access.adapters.DataMatrixAdapter;
-
-@Retention(RetentionPolicy.RUNTIME)
-@Target({ElementType.FIELD, ElementType.TYPE})
-public @interface MatrixComponentAdapter {
+	String id();
 	
-	Class<? extends DataMatrixAdapter<?, ?>> adapter();
+	String model();
 	
-	String domain() default "";
-	
-	int i_domain() default 0;
-	
-	String model() default "";
-	
-	int i_model() default 0;
-	
-	Class<?> type();
+	String category();
 }

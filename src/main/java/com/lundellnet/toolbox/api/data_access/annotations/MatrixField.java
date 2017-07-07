@@ -23,9 +23,26 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 @Retention(RetentionPolicy.RUNTIME)
-@Target({ElementType.FIELD, ElementType.TYPE})
-public @interface MatrixComponentPoint {
-    PointMapping[] valueMapping();
-
-    MappingProperty[] properties() default {};
+@Target(ElementType.FIELD)
+public @interface MatrixField {
+	
+	//String adapter() default "";
+	
+	//int i_adapter() default 0;
+	
+	Class<?> component() default void.class;
+	
+	//int i_component() default 0;
+	
+	String domain() default "";
+	
+	int i_domain() default 0;
+	
+	String model() default "";
+	
+	int i_model() default 0;
+	
+	String plane() default "";
+	
+	int i_plane() default 0;
 }

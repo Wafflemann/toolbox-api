@@ -13,24 +13,24 @@
 	<jxb:bindings node="xs:enumeration[@value='com.lundellnet.toolbox.api.data_access.annotations.MatrixComponent']">
 	    <jxb:typesafeEnumMember name="MATRIX_COMPONENT" />
 	</jxb:bindings>
-	<jxb:bindings node="xs:enumeration[@value='com.lundellnet.toolbox.api.data_access.annotations.MatrixComponentAdapter']">
+	<!--<jxb:bindings node="xs:enumeration[@value='com.lundellnet.toolbox.api.data_access.annotations.MatrixComponentAdapter']">
 	    <jxb:typesafeEnumMember name="MATRIX_COMPONENT_ADAPTER" />
-	</jxb:bindings>
+	</jxb:bindings>-->
 	<jxb:bindings node="xs:enumeration[@value='com.lundellnet.toolbox.api.data_access.annotations.MatrixComponentField']">
 	    <jxb:typesafeEnumMember name="MATRIX_COMPONENT_FIELD" />
 	</jxb:bindings>
-	<jxb:bindings node="xs:enumeration[@value='com.lundellnet.toolbox.api.data_access.annotations.MatrixComponentPoint']">
+	<!--<jxb:bindings node="xs:enumeration[@value='com.lundellnet.toolbox.api.data_access.annotations.MatrixComponentPoint']">
 	    <jxb:typesafeEnumMember name="MATRIX_COMPONENT_POINT" />
-	</jxb:bindings>
-	<jxb:bindings node="xs:enumeration[@value='com.lundellnet.toolbox.api.data_access.annotations.MatrixConstant']">
+	</jxb:bindings>-->
+	<!--<jxb:bindings node="xs:enumeration[@value='com.lundellnet.toolbox.api.data_access.annotations.MatrixConstant']">
 	    <jxb:typesafeEnumMember name="MATRIX_CONSTANT" />
-	</jxb:bindings>
+	</jxb:bindings>-->
 	<jxb:bindings node="xs:enumeration[@value='com.lundellnet.toolbox.api.data_access.annotations.MatrixSource']">
 	    <jxb:typesafeEnumMember name="MATRIX_SOURCE" />
 	</jxb:bindings>
-	<jxb:bindings node="xs:enumeration[@value='com.lundellnet.toolbox.api.data_access.annotations.PointLocation']">
+	<!--<jxb:bindings node="xs:enumeration[@value='com.lundellnet.toolbox.api.data_access.annotations.PointLocation']">
 	    <jxb:typesafeEnumMember name="POINT_LOCATION" />
-	</jxb:bindings>
+	</jxb:bindings>-->
 	<jxb:bindings node="xs:enumeration[@value='com.lundellnet.toolbox.api.data_access.annotations.PointMapping']">
 	    <jxb:typesafeEnumMember name="POINT_MAPPING" />
 	</jxb:bindings>

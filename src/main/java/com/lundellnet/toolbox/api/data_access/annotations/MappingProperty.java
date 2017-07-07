@@ -25,7 +25,15 @@ import java.lang.annotation.Target;
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ElementType.FIELD, ElementType.TYPE})
 public @interface MappingProperty {
-  String key();
+	String domain() default "";
+	
+	int i_domain() default 0;
+	
+	String model() default "";
+	
+	int i_model() default 0;
+	
+	String key();
   
-  String path();
+	String value();
 }

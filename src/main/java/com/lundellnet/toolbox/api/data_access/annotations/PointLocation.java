@@ -27,8 +27,12 @@ import java.lang.annotation.Target;
 public @interface PointLocation {
     String id() default "";
     
-    String category() default "";
+    int i_id() default 0;
+    
+    String component() default "";
   
+    int i_component() default 0;
+    
 	int column() default 0;
 	
 	int length() default 0;

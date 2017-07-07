@@ -25,7 +25,16 @@ import java.lang.annotation.Target;
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ElementType.TYPE, ElementType.METHOD})
 public @interface MatrixSource {
-    Class<?> sourceType();
     
+	MatrixComponentAdapter[] adapters() default {};
+	
+	Class<?>[] components() default {};
+	
+	MatrixConfiguration[] config() default {};
+	
+	PointMapping[] planes() default {};
+	
     MappingProperty[] properties() default {};
+
+    Class<?> sourceType();
 }

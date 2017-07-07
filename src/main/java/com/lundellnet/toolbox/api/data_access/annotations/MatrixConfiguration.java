@@ -17,26 +17,19 @@
  */
 package com.lundellnet.toolbox.api.data_access.annotations;
 
-import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
-import java.lang.annotation.Target;
-
-import com.lundellnet.toolbox.api.data_access.adapters.DataMatrixAdapter;
 
 @Retention(RetentionPolicy.RUNTIME)
-@Target({ElementType.FIELD, ElementType.TYPE})
-public @interface MatrixComponentAdapter {
+public @interface MatrixConfiguration {
 	
-	Class<? extends DataMatrixAdapter<?, ?>> adapter();
-	
+	enum DEFAULT_ENUM {}
+
 	String domain() default "";
 	
 	int i_domain() default 0;
 	
-	String model() default "";
+	Class<? extends Enum<?>> modelEnum() default DEFAULT_ENUM.class;
 	
-	int i_model() default 0;
-	
-	Class<?> type();
+	//Class<? extends Enum<?>> componentEnum() default DEFAULT_ENUM.class;
 }
